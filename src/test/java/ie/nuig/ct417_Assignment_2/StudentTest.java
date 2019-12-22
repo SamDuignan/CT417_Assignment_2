@@ -5,7 +5,7 @@ import org.junit.*;
 import static org.junit.Assert.*;
 import org.joda.time.*;
 
-public class AppTest {
+public class StudentTest {
 
     /**
      * Test of getId method, of class Student.
@@ -54,5 +54,18 @@ public class AppTest {
         String result = instance.getUsername();
         assertEquals(expResult, result);
     }
+
+    /**
+     * Test of getID method, of class Student.
+     */
+    @org.junit.Test
+    public void testGetAge() {
+        System.out.println("getUser");
+        Student instance = new Student("Jamie Dunne", 18, new DateTime("2018-05-05T10:11:12.123"), 1234);
+        int expResult = 18;
+        int result = instance.getAge();
+        assertEquals(expResult, result);
+    }
+
     
 }

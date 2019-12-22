@@ -40,12 +40,6 @@ public class Student {
 		return this.name + this.age;
 	}
 
-	public String getStudent() {
-		return this.name + this.dob + this.id;
-	}
-
-
-
 }
 
 

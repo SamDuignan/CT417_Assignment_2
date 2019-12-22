@@ -5,10 +5,10 @@ import java.util.ArrayList;
 public class Module
 {
 	private String name;
-	private String id;
+	private int id;
 	private ArrayList<Student> students = new ArrayList<Student>();
 
-	public Module(String module_name, String id, ArrayList<Student> students) {
+	public Module(String module_name, int id, ArrayList<Student> students) {
 		this.name = module_name;
 		this.id = id;
 		this.students = students;
@@ -18,8 +18,16 @@ public class Module
 		return this.name;
 	}
 
-	public String getID() {
+	public String setName(String name) {
+		this.name = name;
+	}
+
+	public int getID() {
 		return this.id;
+	}
+
+	public int setID(int id) {
+		this.id = id;
 	}
 
 	public ArrayList<Student> getStudents() {
