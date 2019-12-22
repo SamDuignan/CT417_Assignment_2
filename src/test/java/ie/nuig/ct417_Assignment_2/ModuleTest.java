@@ -13,7 +13,7 @@ public class ModuleTest {
     @org.junit.Test
     public void testGetId() {
         System.out.println("getId");
-        ArrayList<Student> students;
+        ArrayList<Student> students =  new ArrayList<Student>();
         students.add(new Student("Jamie Dunne", 18, new DateTime("2018-05-05T10:11:12.123"), 1234));
         Module instance = new Module("Software Engineering", 321, students);
         int expResult = 321;
@@ -27,7 +27,7 @@ public class ModuleTest {
     @org.junit.Test
     public void testGetName() {
         System.out.println("getName");
-        ArrayList<Student> students;
+        ArrayList<Student> students =  new ArrayList<Student>();
         students.add(new Student("Jamie Dunne", 18, new DateTime("2018-05-05T10:11:12.123"), 1234));
         Module instance = new Module("Software Engineering", 321, students);
         String expResult = "Software Engineering";
@@ -40,10 +40,11 @@ public class ModuleTest {
      */
     @org.junit.Test
     public void testGetStudents() {
-        ArrayList<Student> students;
+        System.out.println("getStudents");
+        ArrayList<Student> students = new ArrayList<Student>();
         students.add(new Student("Jamie Dunne", 18, new DateTime("2018-05-05T10:11:12.123"), 1234));
         Module instance = new Module("Software Engineering", 321, students);
-        DateTime result = instance.getStudents();
+        ArrayList<Student> result = instance.getStudents();
         assertEquals(students, result);
     }
 

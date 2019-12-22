@@ -13,11 +13,11 @@ public class CourseTest {
     @org.junit.Test
     public void testGetName() {
         System.out.println("getName");
-        ArrayList<Module> modules;
-        modules.add(new Module())
-        Student instance = new Course("Engineering", modules, new DateTime("2019-09-09T09:00:00.000"), new DateTime("2019-09-12T09:00:00.000"));
-        int expResult = "Engineering";
-        int result = instance.getName();
+        ArrayList<Module> modules = new ArrayList<Module>();
+        modules.add(new Module("Software Engineering", 321, null));
+        Course instance = new Course("Engineering", modules, new DateTime("2019-09-09T09:00:00.000"), new DateTime("2019-09-12T09:00:00.000"));
+        String expResult = "Engineering";
+        String result = instance.getName();
         assertEquals(expResult, result);
     }
 
@@ -27,11 +27,11 @@ public class CourseTest {
     @org.junit.Test
     public void testGetModules() {
         System.out.println("getModules");
-        ArrayList<Module> modules;
-        modules.add(new Module())
-        Student instance = new Course("Engineering", modules, new DateTime("2019-09-09T09:00:00.000"), new DateTime("2019-09-12T09:00:00.000"));
+        ArrayList<Module> modules = new ArrayList<Module>();
+        modules.add(new Module("Software Engineering", 321, null));
+        Course instance = new Course("Engineering", modules, new DateTime("2019-09-09T09:00:00.000"), new DateTime("2019-09-12T09:00:00.000"));
         ArrayList<Module> expResult = modules;
-        int result = instance.getModules();
+        ArrayList<Module> result = instance.getModules();
         assertEquals(expResult, result);
     }
 
@@ -41,10 +41,10 @@ public class CourseTest {
     @org.junit.Test
     public void testGetStart() {
         System.out.println("getStart");
-        ArrayList<Module> modules;
-        modules.add(new Module())
-        Student instance = new Course("Engineering", modules, new DateTime("2019-09-09T09:00:00.000"), new DateTime("2019-09-12T09:00:00.000"));
-        DateTime expResult = new DateTime("2019-09-09T09:00:00.000")
+        ArrayList<Module> modules = new ArrayList<Module>();
+        modules.add(new Module("Software Engineering", 321, null));
+        Course instance = new Course("Engineering", modules, new DateTime("2019-09-09T09:00:00.000"), new DateTime("2019-09-12T09:00:00.000"));
+        DateTime expResult = new DateTime("2019-09-09T09:00:00.000");
         DateTime result = instance.getStart();
         assertEquals(expResult, result);
     }
@@ -55,10 +55,10 @@ public class CourseTest {
     @org.junit.Test
     public void testGetEnd() {
         System.out.println("getEnd");
-        ArrayList<Module> modules;
-        modules.add(new Module())
-        Student instance = new Course("Engineering", modules, new DateTime("2019-09-09T09:00:00.000"), new DateTime("2019-09-12T09:00:00.000"));
-        DateTime expResult = new DateTime("2019-09-12T09:00:00.000")
+        ArrayList<Module> modules = new ArrayList<Module>();
+        modules.add(new Module("Software Engineering", 321, null));
+        Course instance = new Course("Engineering", modules, new DateTime("2019-09-09T09:00:00.000"), new DateTime("2019-09-12T09:00:00.000"));
+        DateTime expResult = new DateTime("2019-09-12T09:00:00.000");
         DateTime result = instance.getEnd();
         assertEquals(expResult, result);
     }

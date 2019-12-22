@@ -18,7 +18,7 @@ public class Module
 		return this.name;
 	}
 
-	public String setName(String name) {
+	public void setName(String name) {
 		this.name = name;
 	}
 
@@ -26,7 +26,7 @@ public class Module
 		return this.id;
 	}
 
-	public int setID(int id) {
+	public void setID(int id) {
 		this.id = id;
 	}
 

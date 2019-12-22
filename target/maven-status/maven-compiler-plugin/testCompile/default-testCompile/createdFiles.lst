@@ -1,1 +1,3 @@
-SamDuignan\app\AppTest.class
+SamDuignan\app\CourseTest.class
+SamDuignan\app\ModuleTest.class
+SamDuignan\app\StudentTest.class
